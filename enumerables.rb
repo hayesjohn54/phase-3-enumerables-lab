@@ -1,4 +1,4 @@
-require 'pry'
+
 
 # this method returns an array of hashes, which we'll use in the other methods
 def spicy_foods 
@@ -12,7 +12,13 @@ end
 # given an array of spicy foods, **return an array of strings**
 # with the names of each spicy food
 def get_names(spicy_foods)
-  # your code here
+  spicy_foods[0..2].each do |food|
+    food[:name]
+  end
+
+
+  
+
 end
 
 # given an array of spicy foods, **return an array of hashes** 
